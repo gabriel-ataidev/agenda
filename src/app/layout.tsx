@@ -1,10 +1,10 @@
-import type { Metadata } from "next";
-import "../styles/globals.css";
-import { fontMono } from "@/lib/fonts";
+import type { Metadata } from 'next';
+import '../styles/globals.css';
+import { fontMono } from '@/lib/fonts';
 
 export const metadata: Metadata = {
-  title: "agenda.ai",
-  description: "Plataforma para agendar consultas",
+  title: 'agenda.ai',
+  description: 'Plataforma para agendar consultas',
   authors: [
     {
       name: 'Gabriel Ataide',
@@ -21,11 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body
-        className={`${fontMono.className} antialiased`}
-      >
-        {children}
-      </body>
+      <body className={`${fontMono.className} antialiased`}>{children}</body>
     </html>
   );
 }
